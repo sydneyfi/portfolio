@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6c81e0b95a.js" crossorigin="anonymous"></script>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <title>Sydney Finkelstein</title>
+</head>
+<body>
+    <header>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <h1 class="header_pos">SYDNEY FINKELSTEIN</h1>
+        <nav>
+            <ul tabindex="0" class="nav_links">
+                <li class="nav_item"><a href = "index.html">About Me</a></li>
+                <li class="nav_item"><a href = "experience.html">Experience</a></li>
+                <li class="active nav_item"><a href = "personal.html">Personal Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="hobbies">
+            <div class="hobby hobby1" tabindex="0">
+                <img class = "hobbyImg" src="images/airplaneFinal.png" alt = "Airplane flying at upwards angle"/>
+                <h2>Travel</h2>
+                <p>I love to travel and have been to twelve countries</p>
+            </div>
+            
+            <div class="hobby hobby2" tabindex="0">
+                <img class = "hobbyImg" src="images/hikingFinal.png" alt = "Stick figure wearing backpack and holding hiking stick"/>
+                <h2>Hiking</h2>
+                <p>I enjoy both long a short hikes, especially in the US's beautiful National Parks</p>
+            </div>
+    
+            <div class="hobby hobby3" tabindex="0">
+                <img class = "hobbyImg" src="images/bakingFinal.png" alt = "Whisk and rolling pin with three stars on it crossed over eachother"/>
+                 <h2>Baking</h2>
+                <p>I have a major sweet tooth and especially like to bake cookies and cupcakes</p>
+            </div>
+        </div>
+        
+        <div class="gallery"> 
+            <!-- <div class="galImg">
+                <img src="images/bridge.jpg" alt = "Lucerne bridge"/>
+            </div> -->
+            <!-- <a href = "images/mp.jpg" target="_blank" data-lightbox="tea" data-title="A comforting cup of tea">
+               
+            </a> -->
+
+            <div class="galImg large" tabindex="0">
+                <a href = "images/mp.jpg" target="_blank" data-lightbox="pic" data-title="Macchu Picchu">
+                    <img src="images/mp.jpg" alt = "View of Macchu Picchu (tall mountains with anicent civilization ruins)"/>
+                </a>
+            </div>
+            
+            <div class="galImg" tabindex="0">
+                <a href = "images/colosseum.jpg" target="_blank" data-lightbox="pic" data-title="Colosseum stage">
+                    <img src="images/colosseum.jpg" alt = "Colosseum stage"/>
+                </a> 
+            </div>
+           
+            <div class="galImg" tabindex="0">
+                <a href = "images/RduomoMural.jpg" target="_blank" data-lightbox="pic" data-title="Painting inside Florence Duomo">
+                    <img src="images/RduomoMural.jpg" alt = "Religious paintings on inside of dome"/>
+                </a>  
+            </div>
+            
+            <div class="galImg" tabindex="0">
+                <a href = "images/RflorenceDuomo.jpg" target="_blank" data-lightbox="pic" data-title="Florence Duomo">
+                    <img src="images/RflorenceDuomo.jpg" alt = "Florence Duomo"/>
+                </a> 
+            </div>
+            
+            <div class="galImg large" tabindex="0">
+                <a href = "images/florenceView.jpg" target="_blank" data-lightbox="pic" data-title="View of Florence">
+                    <img src="images/florenceView.jpg" alt = "View of Florence's terracotta roofs"/>
+                </a>
+            </div>
+           
+            <div class="galImg" tabindex="0">
+                <a href = "images/garden.jpg" target="_blank" data-lightbox="pic" data-title="Monastery in Rome">
+                    <img src="images/garden.jpg" alt = "View of monastery garden under an arch"/>
+                </a>
+            </div>
+            
+            <div class="galImg" tabindex="0">
+                <a href = "images/Lion.jpg" target="_blank" data-lightbox="pic" data-title="Lion of Lucerne">
+                    <img src="images/Lion.jpg" alt = "Lion carved into rock"/>
+                </a>
+            </div>
+            
+            <div class="galImg" tabindex="0">
+                <a href = "images/RswissFlag.jpg" target="_blank" data-lightbox="pic" data-title="View from Lake Zurich">
+                    <img src="images/RswissFlag.jpg" alt = "Swiss flag blowing in wind off back of a boat"/>
+                </a>
+            </div>
+           
+            <div class="galImg large" tabindex="0">
+                <a href = "images/Rvatican.jpg" target="_blank" data-lightbox="pic" data-title="Vatican Museum ceiling">
+                    <img src="images/Rvatican.jpg" alt = "Ornate ceiling painting with religious theme at the Vatican"/>
+                </a>
+            </div>
+        </div>
+
+       
+    </main>
+
+    <footer>
+        <div class="contacts">
+            <a href = "https://www.linkedin.com/in/sydney-finkelstein/" target="_blank" aria-label="LinkedIn Logo"><i class="footer fa-brands fa-linkedin fa-2x"></i></a>
+            <a href = "https://github.com/sydneyfi" aria-label="Github Logo" target="_blank"><i class="footer fa-brands fa-github fa-2x"></i></a>
+
+            <div class="resume">
+                <button onclick="openModal()" id="resumeButton" aria-label="Resume Logo"><i class="resume_icon footer fa-brands fa-solid fa-file-lines fa-2x"></i></button>
+
+                <div class="modal" id="resumeModal">
+                    <div class="modalContent" tabindex="0">
+                        <span onclick="closeModal()" class="close">&times;</span>
+                        <embed src="docs/sydneyfiResume.pdf"/> 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <p class="copy">Sydney Finkelstein &copy; 2022</p>
+    </footer>
+
+    <script src="js/portfolio.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    
+</body>
+</html>

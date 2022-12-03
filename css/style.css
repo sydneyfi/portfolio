@@ -1,0 +1,872 @@
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* skip styling */
+
+.skip a{
+    background: #373737;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+   }   
+
+/* position the default position for the skip class element*/
+.skip a {
+    position: absolute;
+    top: -40px;
+   }
+
+/* selector/rule property to position the skip class element when it is in focus*/
+.skip a:focus {
+ top: 20px;
+}
+
+
+/* /////////////////////////////////////////// */
+
+
+/* Nav styling */
+
+/* sets header color and margins */
+header {
+    background: #373737;
+    border-bottom: 3px solid #373737;
+    margin-bottom: 50px
+}
+
+/* sets header to flex styling */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* sets nav links to flex styling */
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* sets margins of header */
+.header_pos {
+    margin: 20px auto 30px auto;
+}
+
+/* nav ul li {
+    width: 10em;
+    margin: 3px;
+    color: #373737;
+    text-align: left;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-family: 'Times';
+} */
+
+/* sets nav link styling */
+nav ul li a{
+    text-decoration: none;
+}
+
+/* sets margin below nav links */
+nav ul li {
+    margin-bottom: 15px;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    border-bottom: 2px solid #f4f4f4;
+    font-weight: bold;
+}
+
+
+/* sets link styling */
+a {
+    color: #f4f4f4;
+}
+.active a {
+    border-bottom: 2px solid #f4f4f4;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #f4f4f4;
+}
+
+
+/* sets h1 color and font size */
+h1 {
+    font-family: 'sans-serif';
+    color: #f4f4f4;
+    font-size: 30px;
+}
+
+img {
+    display: inline-block;
+}
+
+/* /////////////////////////////////////////// */
+
+/* Welcome message and headshot styling */
+.aboutme {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    column-gap: 15px;
+    padding: 20px;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 50%;
+    border: 10px solid #c0b283;
+}
+
+.welcomeMsg {
+    /* padding: 50px;
+    border: 5px solid #c0b283; */
+    text-align: center;
+    font-size: 125%;
+    color: #373737;
+}
+
+/* /////////////////////////////////////////// */
+
+/* skills styling */
+.div_skills {
+    background-color: #dcd0c0;
+    padding: 20px;
+    height: 55vw;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 5vw;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    height: 12vw;
+}
+
+.skill img {
+    width: 12vw;
+    padding-bottom: 0.25em;
+}
+
+.flip-card-back > p  {
+    display: none;
+}
+
+.skill p {
+    text-align: center;
+    font-weight: bold;
+    font-family: Times;
+    font-size: 2vw;
+    margin-bottom: 3vw;
+    color: #373737;
+}
+
+h3 {
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: 'sans-serif';
+    margin-bottom: 10px;
+    color: #373737;
+}
+
+
+
+/* ///////////////////////////////////// */
+
+
+
+/* Form styling */
+.form {
+    background-color: #373737;
+}
+
+form {
+    margin-top: 50px;
+    margin: 50px;
+    padding: 1em;
+}
+
+fieldset > label, textarea {
+    font-family: Times;
+    font-size: 3vw;
+    color: #f4f4f4;
+}
+
+fieldset > label {
+    display: block;
+    text-align: center;
+}
+
+::placeholder {
+    font-family: sans-serif;
+    font-size: 2vw;
+    color: #373737;
+}
+
+fieldset > legend {
+    font-size: 5vw;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Times;
+    color: #f4f4f4;
+}
+
+fieldset > input {
+    display: inline-block;
+    width: 100%;
+    height: 4vw;
+    margin: 0.25em 1em 1em 0;
+    font-family: sans-serif;
+    color: #373737;
+    background-color: #f4f4f4;
+}
+
+fieldset > textarea {
+    display: inline-block;
+    width: 100%;
+    height: 4em;
+    margin: 0.25em 1em 0.5em 0;
+    font-family: sans-serif;
+    color: #373737;
+    background-color: #f4f4f4;
+}
+
+fieldset > input:last-child {
+    width: 25%;
+    border-radius: 3px;
+    margin-left: 37.5%;
+    font-family: Times;
+    color: #373737;
+    font-size: 2vw;
+}
+
+fieldset > input:last-child:hover {
+    background-color: #c0b283;
+}
+
+/* /////////////////////////////////////// */
+
+/* Hobbies and Gallery styling */
+.hobbies {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.hobby {
+    text-align: center;
+    padding: 20px;
+}
+
+.hobbyImg {
+    border-radius: 50%;
+    width: 50%;
+    border: 10px solid #c0b283;
+}
+
+.hobby > h2 {
+    font-family: Times;
+    font-size: 5vw;
+}
+
+.hobby > p {
+    font-family: sans-serif;
+    font-size: 3vw;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-gap: 30px;
+    /* align-items: center; */
+}
+
+.galImg img {
+    border: 10px solid #dcd0c0;
+}
+
+
+
+
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 10%;
+    top: 5%;
+    width: 80%;
+    height: 80%;
+    background-color: #dcd0c0;
+    overflow: hidden;
+  }
+
+  #resumeButton {
+      width: 100%;
+      height: 100%;
+  }
+
+#resumeModal{
+    border-radius: 10px;
+    border: 5px solid #373737;
+    padding: none;
+    overflow: scroll;
+}
+  
+  .modalContent {
+    background-color: #dcd0c0;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px 10px 0 10px;
+    padding-right: none !important;
+  }
+
+  embed {
+      width: 99%;
+      height: 93%;
+      display: inline-block;
+      overflow: scroll;
+  }
+  
+  .close {
+    color: #373737;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+    color: #f4f4f4;
+    cursor: pointer;
+  }
+
+  .mecontainer {
+    animation-name: animationOne;
+    animation-duration: 4s; 
+    animation-timing-function: ease-in-out;
+  }
+
+  .resume {
+      height: 100%;
+  }
+
+  .resume_icon{
+      background-color: transparent !important;
+  }
+/* End Modal Styling */
+
+i.footer {
+    border-radius: 60px;
+    background-color: #373737;
+    padding: 0.25em 0.3em;
+}
+
+i.footer:hover {
+    background-color: #c0b283;
+    cursor: pointer;
+}
+
+i {
+    color: #f4f4f4;
+}
+
+button {
+    border-radius: 60px;
+    background-color: #373737;
+    padding: 0.25em 0.3em;
+    border: none;
+    color: #373737;
+}
+
+button:hover {
+    background-color: #c0b283;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    bottom: 0;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    background-color: #373737;
+}
+
+.copy {
+    font-family: Times;
+    color: #c0b283;
+}
+
+
+
+
+.experience {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 4vw;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 2vw;
+    padding: 20px;
+    background-color: #dcd0c0;
+    color: #373737;
+}
+
+.content > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content p {
+    grid-column: 1 / 3;
+}
+
+.content p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+}
+
+
+
+
+@media screen and (prefers-reduced-motion: reduce){
+    .flip-card-back > p{
+        display: none;
+    }
+
+    .flip-card-front > p {
+        display: block !important;
+    }
+
+    .skill {
+        pointer-events: none;
+    }
+
+    .flip-card-front {
+        flex-direction: column;
+    }
+
+
+  }
+
+
+/* iPad styling */
+@media screen and (min-width: 700px) {
+    /* sets flex of header */
+    /* header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } */
+
+    /* sets nav links to right */
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+   /* puts header at left */
+   /* .header_pos {
+    margin-left: 5px;
+   } */
+
+   nav ul li a {
+    margin: 20px;
+    /* font-size */
+   }
+
+
+   /* /////////////////////////////////////////// */
+
+   /* skill styling */
+   .div_skills {
+    row-gap: 45vw;
+    height: 45vw;
+    }
+
+    .skills {
+        justify-content: space-between;
+    }
+
+
+/* /////////////////////////////////////////// */
+
+
+    /* Form styling */
+    form {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    fieldset > label, textarea {
+        font-size: 2vw;
+    }
+
+
+
+/* /////////////////////////////////////// */
+
+/* Hobbies and Gallery styling */
+    .hobbies {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    }
+
+    .hobbyImg {
+        border-radius: 50%;
+        width: 75%;
+        border: 10px solid #c0b283;
+    }
+
+    .hobby > h2 {
+        font-family: Times;
+        font-size: 4vw;
+    }
+    
+    .hobby > p {
+        font-family: sans-serif;
+        font-size: 2vw;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        grid-gap: 30px;
+        align-items: center;
+    }
+
+    .gallery .galImg {
+        grid-column: span 2;
+    }
+
+    .gallery .galImg:last-child {
+        grid-column: 2 / 4;
+    }
+
+
+
+
+    .content {
+        grid-template-columns: 1fr 2fr;
+        justify-items: center;
+        row-gap: 15px;
+        column-gap: 15px;
+        padding: 20px;
+    }
+
+    .content > img {
+        max-width: 18vw;
+        grid-row: 1/5;
+    }
+
+    .content > h3 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        text-align: center;
+    }
+
+    .content p {
+        grid-column: 2/3;
+        grid-row: -1 span 1;
+    }
+
+    .content > h4 {
+        font-size: 4vw;;
+    }
+
+    /* .content > h4  {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-align: center;
+    } */
+
+    /* .content > h5 {
+        grid-column: 2/4;
+    } */
+
+    /* .content > h2 {
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: underline;
+        font-weight: bold;
+        margin-bottom: 10px;
+    } */
+    
+    /* .content > h3 {
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 10px;
+        font-size: 4vw;
+    } */
+    
+   /* .content > h4 {
+        display: block;
+        width: 100%;
+        grid-column: 1/3;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4vw;
+    } */
+    
+    /* .content > h5 {
+        text-decoration: underline;
+        grid-column: 1/3;
+        font-family: 'Palanquin', sans-serif;
+        font-weight: bold;
+    } */
+
+    .content p {
+        font-size: 2.25vw;
+    }
+
+}
+
+
+
+
+/* Computer styling */
+@media screen and (min-width: 900px) {
+    /* sets flex of header */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* sets nav links to right */
+    /* .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } */
+
+    /* puts header at left */
+    .header_pos {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        margin: 10px;
+        /* font-size */
+    }
+
+    /* font size of name logo */
+    h1 {
+        font-size: 42px;
+    }
+
+/* /////////////////////////////////////////// */
+
+    /* Welcome message and headshot styling */
+    .aboutme {
+        grid-template-columns: 1fr 3fr;
+    }  
+
+    .headshot {
+        border-radius: 50%;
+        width: 100%;
+        border: 10px solid #c0b283;
+    }
+
+
+    /* /////////////////////////////////////////// */
+
+
+    /* skill styling */
+    .skill{
+        background-color: transparent;
+        width: 12vw;
+        perspective: 1000px;
+    }
+
+    .flip-card-front > p{
+        display: none;
+    }
+    
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    
+    .skill:hover .flip-card-inner, .skill:focus .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+    
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    
+    .flip-card-back{
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-back > p  {
+        display: block;
+    }
+
+    .div_skills, .form {
+        grid-column: 1/3;
+    }
+
+    .div_skills {
+        height: auto !important;
+    }
+
+    .skills {
+        row-gap: 0;
+    }
+
+    .skills {
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    /* /////////////////////////////////////////// */
+
+    /* Form Styling */
+    form {
+        width:70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    fieldset > label {
+        display: block;
+        text-align: left;
+    }
+
+    fieldset > legend {
+        font-size: 4vw;
+    }
+
+
+/* /////////////////////////////////////// */
+
+/* Hobbies and Gallery styling */
+    .hobbyImg {
+        border-radius: 50%;
+        width: 50%;
+        border: 10px solid #c0b283;
+    }
+
+    .hobby1 .hobbyImg {
+        width: 75%;
+    }
+
+    .hobby2, .hobby3 {
+        padding-top: 10vh;
+    }
+
+    .hobby1 {
+        align-self: flex-start;
+    }
+
+    .hobby > h2 {
+        font-family: Times;
+        font-size: 3vw;
+    }
+    
+    .hobby > p {
+        font-family: sans-serif;
+        font-size: 1.5vw;
+    }
+
+
+    .gallery {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        grid-gap: 30px;
+        align-items: center;
+    }
+
+
+
+    .gallery .galImg {
+        grid-column: span 1;
+    }
+
+    .gallery .galImg:last-child {
+        grid-column: 1 / -1;
+        padding: 3vw;
+        background-color: #dcd0c0;
+    }
+
+    .gallery .large {
+        grid-column: 1 / -1;
+        padding: 3vw;
+        background-color: #dcd0c0;
+    }
+
+    .hobby1 {
+        order: 2;
+    }
+
+    .hobby2 {
+        order: 1;
+    }
+
+    .hobby3 {
+        order: 3;
+    }
+
+
+    .content > img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .content p {
+        grid-column: 1/3 !important;
+        font-size: 1.5vw;
+    }
+
+    .content h4 {
+        font-size: 2vw;
+    }
+
+    .content h5 {
+        font-size: 2vw;
+    }
+
+}
+
