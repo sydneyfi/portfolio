@@ -282,11 +282,13 @@ fieldset > input:last-child:hover {
 .hobby > h2 {
     font-family: Times;
     font-size: 5vw;
+    color: #373737;
 }
 
 .hobby > p {
     font-family: sans-serif;
     font-size: 3vw;
+    color: #373737;
 }
 
 .gallery {
@@ -451,28 +453,34 @@ footer {
     font-family: sans-serif;
 }
 
+.galleryTitle {
+    text-align: center;
+}
 
+.galleryTitle > h3 {
+    font-family: Times;
+    font-size: 5vw;
+    margin-bottom: 5px;
+    margin-top: 6vh;
+}
 
+.galleryTitle > p {
+    font-family: sans-serif;
+    font-size: 3vw;
+    margin-bottom: 1vh;
+    color: #373737;
+}
 
-@media screen and (prefers-reduced-motion: reduce){
-    .flip-card-back > p{
-        display: none;
-    }
+.experienceTitle {
+    text-align: center;
+    font-family: Times;
+    font-size: 6vw;
+    margin-bottom: 3vh;
+    margin-top: 6vh;
+    font-weight: bold;
+    color: #373737;
+}
 
-    .flip-card-front > p {
-        display: block !important;
-    }
-
-    .skill {
-        pointer-events: none;
-    }
-
-    .flip-card-front {
-        flex-direction: column;
-    }
-
-
-  }
 
 
 /* iPad styling */
@@ -600,7 +608,8 @@ footer {
     }
 
     .content > h4 {
-        font-size: 4vw;;
+        font-size: 3vw;
+        text-align: center;
     }
 
     /* .content > h4  {
@@ -644,6 +653,32 @@ footer {
 
     .content p {
         font-size: 2.25vw;
+    }
+
+
+
+
+    .galleryTitle {
+        text-align: center;
+    }
+    
+    .galleryTitle > h3 {
+        font-family: Times;
+        font-size: 4vw;
+        margin-bottom: 5px;
+        margin-top: 4vh;
+    }
+    
+    .galleryTitle > p {
+        font-family: sans-serif;
+        font-size: 2vw;
+        margin-bottom: 2vh;
+    }
+    
+    .experienceTitle {
+        font-size: 5vw;
+        margin-bottom: 3vh;
+        margin-top: 6vh;
     }
 
 }
@@ -866,6 +901,69 @@ footer {
 
     .content h5 {
         font-size: 2vw;
+    }
+
+    @keyframes headshotAnimation {
+        from {width: 0%;}
+        to {width: 100%;}
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    .headshot {
+        animation-name: headshotAnimation;
+        animation-duration: 4s; 
+        animation-timing-function: ease-in-out;
+    }
+
+
+
+
+    .galleryTitle {
+        text-align: center;
+    }
+    
+    .galleryTitle > h3 {
+        font-family: Times;
+        font-size: 3vw;
+        margin-bottom: 5px;
+        margin-top: 4vh;
+    }
+    
+    .galleryTitle > p {
+        font-family: sans-serif;
+        font-size: 1.5vw;
+        margin-bottom: 3vh;
+    }
+
+
+    .experienceTitle {
+        font-size: 4vw;
+        margin-bottom: 3vh;
+        margin-top: 6vh;
+    }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    .headshot {
+        animation: none;
+    }
+
+    .flip-card-back > p{
+        display: none;
+    }
+
+    .flip-card-front > p {
+        display: block !important;
+    }
+
+    .skill {
+        pointer-events: none;
+    }
+
+    .flip-card-front {
+        flex-direction: column;
     }
 
 }
