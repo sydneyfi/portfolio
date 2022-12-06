@@ -543,7 +543,6 @@ footer {
 
 /* Hobbies and Gallery styling */
     .hobbies {
-        display: grid;
         grid-template-columns: auto auto auto;
         justify-content: center;
     }
@@ -565,7 +564,6 @@ footer {
     }
 
     .gallery {
-        display: grid;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
         grid-gap: 30px;
@@ -690,7 +688,6 @@ footer {
 @media screen and (min-width: 900px) {
     /* sets flex of header */
     header {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -847,7 +844,6 @@ footer {
 
 
     .gallery {
-        display: grid;
         grid-template-columns: auto auto auto;
         justify-content: center;
         grid-gap: 30px;
